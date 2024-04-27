@@ -48,5 +48,5 @@ let baseAmount = amount / fromAmount ; // dollar
 let convertedAmount = baseAmount * toAmount ;//user selected amount
 
 //Printing currency conversion
-console.log(`You convert ${amount} from ${userCurrency} to ${toCurrency} 
-\n Your converted amount is ${convertedAmount}`);
+console.log(chalk.green(`You convert ${amount} from ${userCurrency} to ${toCurrency} 
+\n Your converted amount is ${convertedAmount}`));

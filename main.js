@@ -1,6 +1,7 @@
 #! /usr/bin/env node
 // Import inquirer and chalk
 import inquirer from "inquirer";
+import chalk from "chalk";
 // Make an object of currencies conversion
 let currency = {
     USD: 1,
@@ -40,5 +41,5 @@ let amount = answers.amount; // user entered amount
 let baseAmount = amount / fromAmount; // dollar
 let convertedAmount = baseAmount * toAmount; //user selected amount
 //Printing currency conversion
-console.log(`You convert ${amount} from ${userCurrency} to ${toCurrency} 
-\n Your converted amount is ${convertedAmount}`);
+console.log(chalk.green(`You convert ${amount} from ${userCurrency} to ${toCurrency} 
+\n Your converted amount is ${convertedAmount}`));
